@@ -1,0 +1,14 @@
+{
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "firehose:PutRecord",
+      "Resource": "arn:aws:firehose:us-west-2:618209257270:deliverystream/ProductionAccessLogs"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::618209257270:role/CWLtoKinesis"
+    }
+  ]
+}

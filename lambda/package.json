@@ -1,0 +1,9 @@
+{
+  "name": "cascout-access-parser",
+  "version": "1.0.0",
+  "main": "fn.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}
