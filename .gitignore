@@ -2,3 +2,6 @@
 bulk/inbox
 bulk/outbox
 bulk/project
+bulk/target
+lambda/node_modules
+bulk/.idea
