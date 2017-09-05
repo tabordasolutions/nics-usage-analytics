@@ -3,6 +3,16 @@
 This project processes Apache Web Server access log files into a comma-separated-value (CSV) file format suitable for
 loading into the SCOUT data warehouse.
 
+## Prerequisites
+
+You will need Scala Build Tool.
+
+On a Mac you can install with Hombrew.
+
+```
+% brew install sbt
+```
+
 ## Usage
 
 Start by placing access log files you want to process in the inbox directory. You can create arbitrary directory
@@ -21,8 +31,8 @@ stream. Parsed results will be placed in the outbox directory.
 Next, upload your files from the outbox directory to an S3 bucket. The cascout-production-access-log-load bucket is
 convenient. You can use the aws command-line interface or any S3 browser to accomplish the update.
 
-Last, import your files into the data warehouse. I recommend loading into a temporary table before merging records into
-the ```accesses``` table.
+Last, import your files into the data warehouse. I recommend loading into a temporary table for review before merging
+records into the ```accesses``` table.
 
 ```
 CREATE TABLE backfill1 (
