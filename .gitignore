@@ -1,6 +1,6 @@
 .DS_Store
-bulk/inbox
-bulk/outbox
+bulk/inbox/*
+bulk/outbox/*
 bulk/project
 bulk/target
 lambda/node_modules
